@@ -1,4 +1,6 @@
 var express = require('express');
 var authrouter = express.Router();
 
-authrouter.get('/login', function ())
+authrouter.get('/login', function (req, res) {
+    
+})
