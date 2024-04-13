@@ -1,7 +1,7 @@
 var app = require('express');
 
 var express = require('express');
-var path 
+var path = require('path')
 
 
 // <!doctype html>
