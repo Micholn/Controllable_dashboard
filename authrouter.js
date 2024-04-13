@@ -1,2 +1,2 @@
 var express = require('express');
-var authrouter = express.Router
+var authrouter = express.Router();
