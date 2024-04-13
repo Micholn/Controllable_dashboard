@@ -1,47 +1,25 @@
-alert("welcome to today's quote");
+<!doctype html>
+<html lang="en">
+<head>
+    <meta  charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href=style.css>
+</head>
+
+<body>
+
+    <div id="box" class="container">
+        <div id="air" class="card">
+            <h3>Advice Slip</h3>
+            <p class="advice"></p>
+            <br />
+            <a id="get-advice">Get more advice</a>
+        </div>
+    </div>
 
 
-const advice = document.querySelector(".advice");  //creating a variable with 
-//that allows the storage of the API into the paragraph with class advice
+<script src="index.js"></script>
+</body>
 
-function getAdvice() {
-    fetch("https://api.adviceslip.com/advice")  //from the Api(extraction)
-    .then(res => res.json())                    //to the json 
-    .then(res => { 
-        advice.innerHTML = res.slip.advice;     //to the HTML text
-    })
-    .catch(err => console.error(err));          //to catch errors 
-}
-
-document.getElementById("get-advice")
-.addEventListener("click", getAdvice);
-
-getAdvice();     //calling the function 
-
-
-
-
-//a function that changes the div backgroundcolor every two seconds 
-var i = 0;
-function alternate() {
-  var doc = document.getElementById("box");
-  var color = ["black", "blue", "brown", "green"];
-  doc.style.backgroundColor = color[i];
-  i = (i + 1) % color.length;
-}
-setInterval(alternate, 2000);
-
-
-//a function that changes the background color of a div
-
-document.getElementById("air").style.backgroundColor = "orange";
-
-
-//a javascript function that changes the background color of a page
-function changeBackground(color) {
-   document.body.style.background = color;
-}
-
-window.addEventListener("load", function() {
-    changeBackground("red");
-});
+</html>
