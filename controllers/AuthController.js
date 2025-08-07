@@ -11,5 +11,19 @@ var MockAdapter = require("axios-mock-adapter");
 var mock = new MockAdapter(axios);
 
 let users = [
-    {id: 1, username: 'admin', password: '123456', }
-]
+    {id: 1, username: 'admin', password: '123456', email: 'admin@themesbrand.com' }
+];
+
+//Mock GET request to /users when param `searchText` is 'John'
+mock.onGet("/users", {params: {searxhText: "John"} }).reply(200, {
+    users: users,
+});
+
+module.exports = function(app) {
+
+    //Inner Auth
+   app.get('/pages-login', function(req, res) {
+    res.locals = {title: 'Login'};
+    res.render()
+   } )
+}
