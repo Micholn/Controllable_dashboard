@@ -24,6 +24,13 @@ module.exports = function(app) {
     //Inner Auth
    app.get('/pages-login', function(req, res) {
     res.locals = {title: 'Login'};
-    res.render()
-   } )
+    res.render('AuthInner/pages-login');
+   });
+   app.get('/pages-register', function(req, res) {
+    res.locals = {title: 'Register'};
+    res.render('AuthInner/pages-register');
+   });
+   app.get('/pages-recoverpw', function(req, res) {
+    
+   })
 }
