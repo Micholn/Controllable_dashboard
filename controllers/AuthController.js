@@ -33,5 +33,15 @@ module.exports = function(app) {
    app.get('/pages-recoverpw', function(req, res) {
      res.locals = { title: 'Recover Password'};
      res.render('AuthInner/pages-recoverpw');
+   });
+   app.get('/pages-lock-screen', function(req, res) {
+      res.locals = {title: 'Lock Screen'};
+   });
+   app.get('/pages-login-2', function (req, res) {
+      res.locals = { title: 'Login 2'};
+      res.render('AuthInner/pages-login-2');
+   });
+   app.get('/pages-register-2', function (req, res) {
+      res.locals = { title: 'Register 2 '}
    })
 }
