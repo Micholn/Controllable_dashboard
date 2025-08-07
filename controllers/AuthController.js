@@ -31,6 +31,7 @@ module.exports = function(app) {
     res.render('AuthInner/pages-register');
    });
    app.get('/pages-recoverpw', function(req, res) {
-    
+     res.locals = { title: 'Recover Password'};
+     res.render('AuthInner/pages-recoverpw');
    })
 }
