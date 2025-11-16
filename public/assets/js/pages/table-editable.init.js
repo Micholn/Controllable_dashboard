@@ -1,10 +1,3 @@
-/*
-Template Name: Admiria - Responsive Bootstrap 5 Admin Dashboard
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Table editable Init Js File
-*/
 
 $(function () {
     var pickers = {};

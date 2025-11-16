@@ -1,10 +1,4 @@
-/*
-Template Name: Admiria - Responsive Bootstrap 5 Admin Dashboard
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Form Advanced
-*/
+
 
 !function($) {
   "use strict";
